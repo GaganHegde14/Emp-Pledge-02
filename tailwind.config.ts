@@ -60,6 +60,7 @@ export default {
         samsung: {
           text: "rgb(var(--samsung-text))",
           "grey-900": "rgb(var(--samsung-grey-900))",
+          "grey-600": "rgb(var(--samsung-grey-600))",
           color: "rgb(var(--samsung-color))",
           "color-3": "rgb(var(--samsung-color-3))",
           white: "rgb(var(--samsung-white))",
