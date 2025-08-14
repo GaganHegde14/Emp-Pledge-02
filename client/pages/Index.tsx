@@ -82,26 +82,29 @@ export default function Index() {
             </div>
           </div>
 
-          {/* Employee Info */}
-        <div className="bg-white border border-samsung-grey-light rounded-lg p-4 mb-6">
-          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4 xl:gap-8">
-            <div className="md:col-span-2 xl:col-span-1">
-              <div className="font-bold text-sm text-samsung-text mb-1">Manoj Kandan M</div>
-              <div className="font-bold text-sm text-samsung-text mb-1">Gen ID: 25504878</div>
-              <div className="text-sm text-samsung-text">Manoj.kandan@partner.samsung.com</div>
-            </div>
-
-            <div className="xl:col-span-1">
+          {/* Employee Info Grid - positioned to match Figma design */}
+        <div className="relative mb-6">
+          <div className="flex items-start gap-8 lg:gap-16">
+            {/* Designation */}
+            <div className="min-w-[100px]">
               <div className="text-sm text-samsung-color-3 mb-1">Designation</div>
               <div className="font-bold text-sm text-samsung-text">Outsourcing</div>
             </div>
 
-            <div className="xl:col-span-1">
+            {/* Vertical separator */}
+            <div className="hidden lg:block w-px h-14 bg-samsung-grey-light"></div>
+
+            {/* Division */}
+            <div className="flex-1 max-w-[450px]">
               <div className="text-sm text-samsung-color-3 mb-1">Division</div>
-              <div className="font-bold text-sm text-samsung-text break-words">Tech Strategy Team\Smart Infra Group\Information System & AI Tools</div>
+              <div className="font-bold text-sm text-samsung-text">Tech Strategy Team\Smart Infra Group\Information System & AI Tools</div>
             </div>
 
-            <div className="xl:col-span-1">
+            {/* Vertical separator */}
+            <div className="hidden lg:block w-px h-14 bg-samsung-grey-light"></div>
+
+            {/* Manager */}
+            <div className="min-w-[150px]">
               <div className="text-sm text-samsung-color-3 mb-1">Manager</div>
               <div className="font-bold text-sm text-samsung-text">Ravindra S R (06786669)</div>
             </div>
