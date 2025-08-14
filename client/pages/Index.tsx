@@ -39,20 +39,42 @@ export default function Index() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Title Section */}
         <div className="mb-6">
-          <div className="flex items-center gap-4 mb-4">
-            {/* Avatar */}
+          <div className="flex items-start gap-4 mb-6">
+            {/* Avatar with profile image pattern */}
             <div className="relative">
-              <div className="w-12 h-12 rounded-full bg-gradient-to-br from-blue-400 to-blue-600 flex items-center justify-center text-white font-semibold">
-                MK
-              </div>
-              <div className="absolute -bottom-1 -right-1 w-4 h-4 bg-samsung-green rounded-full border-2 border-white"></div>
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <mask id="mask0_avatar" style={{maskType: 'luminance'}} maskUnits="userSpaceOnUse" x="0" y="0" width="48" height="48">
+                  <path d="M24 0C10.7452 0 0 10.7452 0 24V24.036C0 37.2908 10.7092 48 23.964 48H24C37.2548 48 48 37.2908 48 24.036V24C48 10.7452 37.2908 0 24.036 0H24Z" fill="white"/>
+                </mask>
+                <g mask="url(#mask0_avatar)">
+                  <rect width="48" height="48" fill="#4F9CF9"/>
+                  <circle cx="24" cy="20" r="8" fill="white"/>
+                  <circle cx="24" cy="44" r="16" fill="white"/>
+                </g>
+                <rect x="32.5" y="33.5" width="13" height="13" rx="6.5" fill="#04802E"/>
+                <rect x="32.5" y="33.5" width="13" height="13" rx="6.5" stroke="white"/>
+              </svg>
+              <div className="absolute top-1 right-1 w-3 h-3 bg-samsung-color-3 rounded-full"></div>
             </div>
+
+            {/* Header content */}
             <div className="flex-1">
-              <h1 className="text-lg sm:text-xl font-bold text-samsung-text mb-1">
-                SELF Essentials: Diversity, Equity & Inclusion Module 
+              <h1 className="text-xl font-bold text-samsung-text leading-tight">
+                <span className="text-xl">SELF Essentials: Diversity, Equity & Inclusion Module</span>
                 <span className="text-sm font-bold"> - Report</span>
               </h1>
+
+              {/* Employee name and info positioned below avatar */}
+              <div className="mt-4 flex items-start gap-8">
+                <div className="flex flex-col gap-1">
+                  <div className="font-bold text-sm text-samsung-text">Manoj Kandan M</div>
+                  <div className="font-bold text-sm text-samsung-text">Gen ID: 25504878</div>
+                  <div className="text-sm text-samsung-text">Manoj.kandan@partner.samsung.com</div>
+                </div>
+              </div>
             </div>
+
+            {/* Clock icon in top right */}
             <div className="flex items-center gap-2">
               <svg className="w-8 h-8 text-samsung-color" viewBox="0 0 20 20" fill="currentColor">
                 <path fillRule="evenodd" clipRule="evenodd" d="M13.4064 13.0314L10.0364 11.0314V6.50139C10.0364 6.10139 9.71638 5.78139 9.31638 5.78139H9.25638C8.85638 5.78139 8.53638 6.10139 8.53638 6.50139V11.2214C8.53638 11.5714 8.71638 11.9014 9.02638 12.0814L12.6764 14.2714C13.0164 14.4714 13.4564 14.3714 13.6564 14.0314C13.8664 13.6814 13.7564 13.2314 13.4064 13.0314ZM18.7164 2.79139L15.6364 0.23139C15.2164 -0.11861 14.5864 -0.0686096 14.2264 0.36139C13.8764 0.78139 13.9364 1.41139 14.3564 1.77139L17.4264 4.33139C17.8464 4.68139 18.4764 4.63139 18.8364 4.20139C19.1964 3.78139 19.1364 3.15139 18.7164 2.79139ZM1.63638 4.33139L4.70638 1.77139C5.13638 1.41139 5.19638 0.78139 4.83638 0.36139C4.48638 -0.0686096 3.85638 -0.11861 3.43638 0.23139L0.356383 2.79139C-0.0636172 3.15139 -0.123617 3.78139 0.236383 4.20139C0.586383 4.63139 1.21638 4.68139 1.63638 4.33139ZM9.53638 1.78139C4.56638 1.78139 0.536383 5.81139 0.536383 10.7814C0.536383 15.7514 4.56638 19.7814 9.53638 19.7814C14.5064 19.7814 18.5364 15.7514 18.5364 10.7814C18.5364 5.81139 14.5064 1.78139 9.53638 1.78139ZM9.53638 17.7814C5.67638 17.7814 2.53638 14.6414 2.53638 10.7814C2.53638 6.92139 5.67638 3.78139 9.53638 3.78139C13.3964 3.78139 16.5364 6.92139 16.5364 10.7814C16.5364 14.6414 13.3964 17.7814 9.53638 17.7814Z"/>
