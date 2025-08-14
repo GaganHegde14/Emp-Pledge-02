@@ -24,7 +24,7 @@ export default function Index() {
       </div>
 
       {/* Navigation */}
-      <div className="px-6 py-3">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
         <div className="flex items-center gap-2 text-xs text-samsung-text">
           <button className="flex items-center gap-2 hover:text-samsung-color">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
