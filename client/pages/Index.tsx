@@ -102,20 +102,22 @@ export default function Index() {
           <h3 className="text-base font-bold text-samsung-text-primary mb-4">Self Essential Training Videos</h3>
           
           {/* Tab Navigation */}
-          <div className="flex flex-wrap gap-2 mb-6">
-            {tabs.map((tab, index) => (
-              <button
-                key={index}
-                onClick={() => setActiveTab(tab)}
-                className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${
-                  activeTab === tab
-                    ? 'bg-gradient-to-r from-blue-400 to-blue-500 text-white shadow-lg'
-                    : 'bg-samsung-toggle-bg text-samsung-text-primary hover:bg-gray-300'
-                }`}
-              >
-                {tab}
-              </button>
-            ))}
+          <div className="overflow-x-auto pb-2">
+            <div className="flex gap-2 mb-6 min-w-max">
+              {tabs.map((tab, index) => (
+                <button
+                  key={index}
+                  onClick={() => setActiveTab(tab)}
+                  className={`px-4 py-2 rounded-full text-sm font-medium transition-all whitespace-nowrap ${
+                    activeTab === tab
+                      ? 'bg-gradient-to-r from-blue-400 to-blue-500 text-white shadow-lg'
+                      : 'bg-samsung-toggle-bg text-samsung-text-primary hover:bg-gray-300'
+                  }`}
+                >
+                  {tab}
+                </button>
+              ))}
+            </div>
           </div>
 
           {/* Video Content Area */}
