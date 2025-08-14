@@ -36,7 +36,7 @@ export default function Index() {
       </div>
 
       {/* Main Content */}
-      <div className="px-6">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Title Section */}
         <div className="mb-6">
           <div className="flex items-center gap-4 mb-4">
