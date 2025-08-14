@@ -57,6 +57,18 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        samsung: {
+          text: "rgb(var(--samsung-text))",
+          "grey-900": "rgb(var(--samsung-grey-900))",
+          color: "rgb(var(--samsung-color))",
+          "color-3": "rgb(var(--samsung-color-3))",
+          white: "rgb(var(--samsung-white))",
+          "text-primary": "rgb(var(--samsung-text-primary))",
+          "grey-light": "rgb(var(--samsung-grey-light))",
+          "blue-bg": "rgb(var(--samsung-blue-bg))",
+          "toggle-bg": "rgb(var(--samsung-toggle-bg))",
+          green: "rgb(var(--samsung-green))",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
