@@ -124,24 +124,42 @@ export default function Index() {
 
         {/* Training Videos Section */}
         <div className="bg-samsung-blue-bg rounded-lg p-6 mb-6">
-          <h3 className="text-base font-bold text-samsung-text-primary mb-4">Self Essential Training Videos</h3>
-          
-          {/* Tab Navigation */}
-          <div className="overflow-x-auto pb-2">
-            <div className="flex gap-2 mb-6 min-w-max">
-              {tabs.map((tab, index) => (
-                <button
-                  key={index}
-                  onClick={() => setActiveTab(tab)}
-                  className={`px-4 py-2 rounded-full text-sm font-medium transition-all whitespace-nowrap ${
-                    activeTab === tab
-                      ? 'bg-gradient-to-r from-blue-400 to-blue-500 text-white shadow-lg'
-                      : 'bg-samsung-toggle-bg text-samsung-text-primary hover:bg-gray-300'
-                  }`}
-                >
-                  {tab}
+          <h3 className="text-base font-bold text-samsung-text-primary mb-6">Self Essential Training Videos</h3>
+
+          {/* Tab Navigation Container */}
+          <div className="relative mb-8">
+            {/* Background bar */}
+            <div className="w-full h-10 bg-samsung-toggle-bg rounded-full"></div>
+
+            {/* Active tab overlay */}
+            <div className="absolute top-0 left-0 h-10 bg-gradient-to-r from-[#3FBCE6] to-[#36A8DE] rounded-full transition-all duration-300"
+                 style={{ width: `${194 / 1010 * 100}%` }}>
+              <div className="flex items-center justify-center h-full">
+                <span className="text-white text-sm font-bold px-4">Understanding Compliance</span>
+              </div>
+            </div>
+
+            {/* Tab labels positioned over background */}
+            <div className="absolute top-0 left-0 w-full h-10 flex items-center">
+              <div className="flex gap-8 px-6 w-full">
+                <button className="text-sm font-medium text-transparent min-w-[169px]">Understanding Compliance</button>
+                <button onClick={() => setActiveTab("Understanding Compliance Generative AI & AI Ethics (R&D)")}
+                        className="text-sm font-medium text-samsung-text-primary hover:text-samsung-color whitespace-nowrap">
+                  Understanding Compliance Generative AI & AI Ethics (R&D)
                 </button>
-              ))}
+                <button onClick={() => setActiveTab("Privacy Training")}
+                        className="text-sm font-medium text-samsung-text-primary hover:text-samsung-color">
+                  Privacy Training
+                </button>
+                <button onClick={() => setActiveTab("SRI-B POSH Training")}
+                        className="text-sm font-medium text-samsung-text-primary hover:text-samsung-color">
+                  SRI-B POSH Training
+                </button>
+                <button onClick={() => setActiveTab("Contract Management")}
+                        className="text-sm font-medium text-samsung-text-primary hover:text-samsung-color">
+                  Contract Management
+                </button>
+              </div>
             </div>
           </div>
 
