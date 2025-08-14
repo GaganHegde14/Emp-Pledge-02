@@ -87,7 +87,7 @@ export default function Index() {
           <div className="flex items-start gap-8 lg:gap-16">
             {/* Designation */}
             <div className="min-w-[100px]">
-              <div className="text-sm text-samsung-color-3 mb-1">Designation</div>
+              <div className="text-sm text-samsung-grey-600 mb-1">Designation</div>
               <div className="font-bold text-sm text-samsung-text">Outsourcing</div>
             </div>
 
@@ -96,7 +96,7 @@ export default function Index() {
 
             {/* Division */}
             <div className="flex-1 max-w-[450px]">
-              <div className="text-sm text-samsung-color-3 mb-1">Division</div>
+              <div className="text-sm text-samsung-grey-600 mb-1">Division</div>
               <div className="font-bold text-sm text-samsung-text">Tech Strategy Team\Smart Infra Group\Information System & AI Tools</div>
             </div>
 
@@ -105,7 +105,7 @@ export default function Index() {
 
             {/* Manager */}
             <div className="min-w-[150px]">
-              <div className="text-sm text-samsung-color-3 mb-1">Manager</div>
+              <div className="text-sm text-samsung-grey-600 mb-1">Manager</div>
               <div className="font-bold text-sm text-samsung-text">Ravindra S R (06786669)</div>
             </div>
           </div>
