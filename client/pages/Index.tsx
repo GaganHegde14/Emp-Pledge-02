@@ -67,8 +67,11 @@ export default function Index() {
             {/* Employee info positioned next to avatar horizontally */}
             <div className="flex items-start gap-4">
               <div className="flex flex-col gap-1">
-                <div className="font-bold text-sm text-samsung-text">Manoj Kandan M</div>
-                <div className="font-bold text-sm text-samsung-text">Gen ID: 25504878</div>
+                <div className="flex items-center gap-4">
+                  <div className="font-bold text-sm text-samsung-text">Manoj Kandan M</div>
+                  <div className="w-1 h-1 bg-samsung-color-3 rounded-full"></div>
+                  <div className="font-bold text-sm text-samsung-text">Gen ID: 25504878</div>
+                </div>
                 <div className="text-sm text-samsung-text">Manoj.kandan@partner.samsung.com</div>
               </div>
               <div className="w-1 h-14 bg-samsung-grey-light mx-4"></div>
