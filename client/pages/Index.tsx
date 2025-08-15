@@ -188,9 +188,9 @@ export default function Index() {
           </div>
         </div>
 
-        {/* Separate Grey Section below blue rectangle - only for View Policies */}
-        <div className="w-full">
-          <div className="bg-[#FBFCFC] rounded-b-lg p-6">
+        {/* View Policies section - separated with white background and more spacing */}
+        <div className="w-full mt-12">
+          <div className="p-6">
             {/* View Policies */}
             <div>
               <button className="flex items-center gap-3 text-samsung-color-3">
