@@ -128,9 +128,9 @@ export default function Index() {
             <h3 className="text-base font-bold text-samsung-text-primary mb-6">Self Essential Training Videos</h3>
 
             {/* Tab Navigation Container */}
-            <div className="relative mb-8 overflow-hidden">
-              {/* Background bar - fit to content */}
-              <div className="flex h-10 bg-samsung-toggle-bg rounded-full overflow-hidden">
+            <div className="relative mb-8">
+              {/* Background bar - fit to content width only */}
+              <div className="inline-flex h-10 bg-samsung-toggle-bg rounded-full overflow-hidden">
                 {/* Active tab with exact width */}
                 <div className="h-10 bg-gradient-to-r from-[#3FBCE6] to-[#36A8DE] rounded-full flex items-center justify-center px-6">
                   <span className="text-white text-sm font-bold whitespace-nowrap">Understanding Compliance</span>
@@ -138,7 +138,7 @@ export default function Index() {
 
                 {/* Other tabs */}
                 <button onClick={() => setActiveTab("Understanding Compliance Generative AI & AI Ethics (R&D)")}
-                        className="text-sm font-medium text-samsung-text-primary px-4 py-2 whitespace-nowrap truncate max-w-[200px]">
+                        className="text-sm font-medium text-samsung-text-primary px-4 py-2 whitespace-nowrap">
                   Understanding Compliance Generative AI & AI Ethics (R&D)
                 </button>
                 <button onClick={() => setActiveTab("Privacy Training")}
