@@ -174,13 +174,8 @@ export default function Index() {
             <div className="p-8 min-h-[400px]">
               {/* Empty space for video content */}
             </div>
-          </div>
-        </div>
 
-        {/* Separate Grey Section below blue rectangle */}
-        <div className="w-full">
-          <div className="bg-[#FBFCFC] rounded-b-lg p-6">
-            {/* Compliance Checkbox */}
+            {/* Compliance Checkbox - moved inside blue rectangle */}
             <div className="flex items-start gap-4 mb-6">
               <button
                 onClick={() => setIsChecked(!isChecked)}
@@ -188,8 +183,8 @@ export default function Index() {
               >
                 <div className={`w-5 h-5 rounded border-2 flex items-center justify-center transition-colors ${
                   isChecked
-                    ? 'bg-samsung-color-3 border-samsung-color-3'
-                    : 'border-samsung-color-3 bg-white'
+                    ? 'bg-samsung-color border-samsung-color'
+                    : 'border-samsung-color bg-white'
                 }`}>
                   {isChecked && (
                     <svg className="w-3 h-3 text-white" fill="none" viewBox="0 0 12 10">
@@ -204,11 +199,16 @@ export default function Index() {
                   )}
                 </div>
               </button>
-              <p className="text-sm text-samsung-grey-900 leading-relaxed">
+              <p className="text-sm text-white leading-relaxed">
                 I have attended the online annual compliance training videos and hereby ensure compliance of the same
               </p>
             </div>
+          </div>
+        </div>
 
+        {/* Separate Grey Section below blue rectangle - only for View Policies */}
+        <div className="w-full">
+          <div className="bg-[#FBFCFC] rounded-b-lg p-6">
             {/* View Policies */}
             <div>
               <button className="flex items-center gap-3 text-samsung-color-3">
