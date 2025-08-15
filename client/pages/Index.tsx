@@ -165,8 +165,8 @@ export default function Index() {
               </div>
             </div>
 
-            {/* Video Content Area - Simple rectangular box */}
-            <div className="bg-white rounded-lg p-8 h-[565px] flex flex-col items-center justify-center">
+            {/* Video Content Area - Plain light blue background */}
+            <div className="p-8 h-[565px] flex flex-col items-center justify-center">
               <div className="text-center">
                 <h4 className="text-lg font-bold text-samsung-grey-900 mb-2">Self Essential Training Videos</h4>
                 <p className="text-sm text-samsung-color-3">Aenean aliquet lectus vestibulum gravida sed vulputate vitae.</p>
