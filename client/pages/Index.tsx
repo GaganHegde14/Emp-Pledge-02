@@ -175,8 +175,8 @@ export default function Index() {
               >
                 <div className={`w-5 h-5 rounded border-2 flex items-center justify-center transition-colors ${
                   isChecked
-                    ? 'bg-samsung-color border-samsung-color'
-                    : 'border-samsung-color bg-white'
+                    ? 'bg-samsung-color-3 border-samsung-color-3'
+                    : 'border-samsung-color-3 bg-white'
                 }`}>
                   {isChecked && (
                     <svg className="w-3 h-3 text-white" fill="none" viewBox="0 0 12 10">
@@ -191,7 +191,7 @@ export default function Index() {
                   )}
                 </div>
               </button>
-              <p className="text-sm text-white leading-relaxed">
+              <p className="text-sm text-black leading-relaxed">
                 I have attended the online annual compliance training videos and hereby ensure compliance of the same
               </p>
             </div>
