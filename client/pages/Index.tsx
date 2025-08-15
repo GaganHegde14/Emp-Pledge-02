@@ -177,11 +177,11 @@ export default function Index() {
 
                 {/* Video content */}
                 <div className="flex-1 flex flex-col items-center justify-center">
-                  <div className="w-20 h-20 bg-samsung-color rounded-full flex items-center justify-center mb-4">
-                    <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                  <button className="w-20 h-20 bg-samsung-color rounded-full flex items-center justify-center mb-4 hover:bg-blue-500 transition-colors">
+                    <svg className="w-8 h-8 text-white ml-1" fill="currentColor" viewBox="0 0 24 24">
                       <path d="M8 5v14l11-7z"/>
                     </svg>
-                  </div>
+                  </button>
                   <h4 className="text-lg font-bold text-samsung-grey-900 mb-2">Self Essential Training Videos</h4>
                   <p className="text-sm text-samsung-color-3">Aenean aliquet lectus vestibulum gravida sed vulputate vitae.</p>
                 </div>
