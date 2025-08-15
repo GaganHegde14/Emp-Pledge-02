@@ -123,9 +123,9 @@ export default function Index() {
         </div>
 
         {/* Training Videos Section - Matching Figma Design Rectangles */}
-        <div className="relative">
+        <div className="relative w-full">
           {/* Main blue background rectangle */}
-          <div className="bg-samsung-blue-bg rounded-lg p-6 h-[753px]">
+          <div className="bg-samsung-blue-bg rounded-lg p-6 h-[753px] w-full">
             <h3 className="text-base font-bold text-samsung-text-primary mb-6">Self Essential Training Videos</h3>
 
             {/* Tab Navigation Container */}
