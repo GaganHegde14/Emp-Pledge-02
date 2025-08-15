@@ -58,21 +58,36 @@ export default function Index() {
             </div>
 
             {/* Header content */}
-            <div className="flex-1">
-              <h1 className="text-xl font-bold text-samsung-text leading-tight">
-                <span className="text-xl">SELF Essentials: Diversity, Equity & Inclusion Module</span>
-                <span className="text-sm font-bold"> - Report</span>
-              </h1>
+          <div className="flex-1">
+            <h1 className="text-xl font-bold text-samsung-text leading-tight mb-4">
+              <span className="text-xl">SELF Essentials: Diversity, Equity & Inclusion Module</span>
+              <span className="text-sm font-bold"> - Report</span>
+            </h1>
 
-              {/* Employee name and info positioned below avatar */}
-              <div className="mt-4 flex items-start gap-8">
-                <div className="flex flex-col gap-1">
-                  <div className="font-bold text-sm text-samsung-text">Manoj Kandan M</div>
-                  <div className="font-bold text-sm text-samsung-text">Gen ID: 25504878</div>
-                  <div className="text-sm text-samsung-text">Manoj.kandan@partner.samsung.com</div>
-                </div>
+            {/* Employee info positioned next to avatar horizontally */}
+            <div className="flex items-start gap-4">
+              <div className="flex flex-col gap-1">
+                <div className="font-bold text-sm text-samsung-text">Manoj Kandan M</div>
+                <div className="font-bold text-sm text-samsung-text">Gen ID: 25504878</div>
+                <div className="text-sm text-samsung-text">Manoj.kandan@partner.samsung.com</div>
+              </div>
+              <div className="w-1 h-14 bg-samsung-grey-light mx-4"></div>
+              <div className="flex flex-col gap-1">
+                <div className="text-sm text-samsung-grey-600">Designation</div>
+                <div className="font-bold text-sm text-samsung-text">Outsourcing</div>
+              </div>
+              <div className="w-1 h-14 bg-samsung-grey-light mx-4"></div>
+              <div className="flex flex-col gap-1">
+                <div className="text-sm text-samsung-grey-600">Division</div>
+                <div className="font-bold text-sm text-samsung-text">Tech Strategy Team\Smart Infra Group\Information System & AI Tools</div>
+              </div>
+              <div className="w-1 h-14 bg-samsung-grey-light mx-4"></div>
+              <div className="flex flex-col gap-1">
+                <div className="text-sm text-samsung-grey-600">Manager</div>
+                <div className="font-bold text-sm text-samsung-text">Ravindra S R (06786669)</div>
               </div>
             </div>
+          </div>
 
             {/* Clock icon in top right */}
             <div className="flex items-center gap-2">
