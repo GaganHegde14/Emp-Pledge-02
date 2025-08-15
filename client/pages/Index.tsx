@@ -128,39 +128,31 @@ export default function Index() {
             <h3 className="text-base font-bold text-samsung-text-primary mb-6">Self Essential Training Videos</h3>
 
             {/* Tab Navigation Container */}
-            <div className="relative mb-8">
-              {/* Background bar */}
-              <div className="w-full h-10 bg-samsung-toggle-bg rounded-full"></div>
-
-              {/* Active tab overlay */}
-              <div className="absolute top-0 left-0 h-10 bg-gradient-to-r from-[#3FBCE6] to-[#36A8DE] rounded-full transition-all duration-300"
-                   style={{ width: `${194 / 1010 * 100}%` }}>
-                <div className="flex items-center justify-center h-full">
-                  <span className="text-white text-sm font-bold px-4">Understanding Compliance</span>
+            <div className="relative mb-8 overflow-hidden">
+              {/* Background bar - fit to content */}
+              <div className="flex h-10 bg-samsung-toggle-bg rounded-full overflow-hidden">
+                {/* Active tab with exact width */}
+                <div className="h-10 bg-gradient-to-r from-[#3FBCE6] to-[#36A8DE] rounded-full flex items-center justify-center px-6">
+                  <span className="text-white text-sm font-bold whitespace-nowrap">Understanding Compliance</span>
                 </div>
-              </div>
 
-              {/* Tab labels positioned over background */}
-              <div className="absolute top-0 left-0 w-full h-10 flex items-center">
-                <div className="flex gap-8 px-6 w-full">
-                  <button className="text-sm font-medium text-transparent min-w-[169px]">Understanding Compliance</button>
+                {/* Other tabs */}
                 <button onClick={() => setActiveTab("Understanding Compliance Generative AI & AI Ethics (R&D)")}
-                        className="text-sm font-medium text-samsung-text-primary whitespace-nowrap">
+                        className="text-sm font-medium text-samsung-text-primary px-4 py-2 whitespace-nowrap truncate max-w-[200px]">
                   Understanding Compliance Generative AI & AI Ethics (R&D)
                 </button>
                 <button onClick={() => setActiveTab("Privacy Training")}
-                        className="text-sm font-medium text-samsung-text-primary">
+                        className="text-sm font-medium text-samsung-text-primary px-4 py-2 whitespace-nowrap">
                   Privacy Training
                 </button>
                 <button onClick={() => setActiveTab("SRI-B POSH Training")}
-                        className="text-sm font-medium text-samsung-text-primary">
+                        className="text-sm font-medium text-samsung-text-primary px-4 py-2 whitespace-nowrap">
                   SRI-B POSH Training
                 </button>
                 <button onClick={() => setActiveTab("Contract Management")}
-                        className="text-sm font-medium text-samsung-text-primary">
+                        className="text-sm font-medium text-samsung-text-primary px-4 py-2 whitespace-nowrap">
                   Contract Management
                 </button>
-                </div>
               </div>
             </div>
 
