@@ -145,22 +145,22 @@ export default function Index() {
               <div className="absolute top-0 left-0 w-full h-10 flex items-center">
                 <div className="flex gap-8 px-6 w-full">
                   <button className="text-sm font-medium text-transparent min-w-[169px]">Understanding Compliance</button>
-                  <button onClick={() => setActiveTab("Understanding Compliance Generative AI & AI Ethics (R&D)")}
-                          className="text-sm font-medium text-samsung-text-primary hover:text-samsung-color whitespace-nowrap">
-                    Understanding Compliance Generative AI & AI Ethics (R&D)
-                  </button>
-                  <button onClick={() => setActiveTab("Privacy Training")}
-                          className="text-sm font-medium text-samsung-text-primary hover:text-samsung-color">
-                    Privacy Training
-                  </button>
-                  <button onClick={() => setActiveTab("SRI-B POSH Training")}
-                          className="text-sm font-medium text-samsung-text-primary hover:text-samsung-color">
-                    SRI-B POSH Training
-                  </button>
-                  <button onClick={() => setActiveTab("Contract Management")}
-                          className="text-sm font-medium text-samsung-text-primary hover:text-samsung-color">
-                    Contract Management
-                  </button>
+                <button onClick={() => setActiveTab("Understanding Compliance Generative AI & AI Ethics (R&D)")}
+                        className="text-sm font-medium text-samsung-text-primary whitespace-nowrap">
+                  Understanding Compliance Generative AI & AI Ethics (R&D)
+                </button>
+                <button onClick={() => setActiveTab("Privacy Training")}
+                        className="text-sm font-medium text-samsung-text-primary">
+                  Privacy Training
+                </button>
+                <button onClick={() => setActiveTab("SRI-B POSH Training")}
+                        className="text-sm font-medium text-samsung-text-primary">
+                  SRI-B POSH Training
+                </button>
+                <button onClick={() => setActiveTab("Contract Management")}
+                        className="text-sm font-medium text-samsung-text-primary">
+                  Contract Management
+                </button>
                 </div>
               </div>
             </div>
