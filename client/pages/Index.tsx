@@ -165,39 +165,16 @@ export default function Index() {
               </div>
             </div>
 
-            {/* Video Reviews Container - Layered design from Figma */}
-            <div className="relative">
-              {/* First video review container (background layer) */}
-              <div className="bg-white rounded-lg p-6 h-[565px] flex flex-col items-center justify-center">
-                {/* White title section inside video area */}
-                <div className="w-full mb-6">
-                  <h4 className="text-base font-bold text-white mb-2">Self Essential Training Videos</h4>
-                  <p className="text-sm text-white">Aenean aliquet lectus vestibulum gravida sed vulputate vitae.</p>
-                </div>
-
-                {/* Video content */}
-                <div className="flex-1 flex flex-col items-center justify-center">
-                  <button className="w-20 h-20 bg-samsung-color rounded-full flex items-center justify-center mb-4 hover:bg-blue-500 transition-colors">
-                    <svg className="w-8 h-8 text-white ml-1" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M8 5v14l11-7z"/>
-                    </svg>
-                  </button>
-                  <h4 className="text-lg font-bold text-samsung-grey-900 mb-2">Self Essential Training Videos</h4>
-                  <p className="text-sm text-samsung-color-3">Aenean aliquet lectus vestibulum gravida sed vulputate vitae.</p>
-                </div>
-              </div>
-
-              {/* Second overlapping video review container (foreground layer) */}
-              <div className="absolute top-1 left-1 bg-white rounded-lg p-6 w-[calc(100%-8px)] h-[565px] flex flex-col items-center justify-center shadow-sm">
-                <div className="text-center">
-                  <button className="w-20 h-20 bg-samsung-color rounded-full flex items-center justify-center mb-4 mx-auto hover:bg-blue-500 transition-colors">
-                    <svg className="w-8 h-8 text-white ml-1" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M8 5v14l11-7z"/>
-                    </svg>
-                  </button>
-                  <h4 className="text-lg font-bold text-samsung-grey-900 mb-2">Self Essential Training Videos</h4>
-                  <p className="text-sm text-samsung-color-3">Aenean aliquet lectus vestibulum gravida sed vulputate vitae.</p>
-                </div>
+            {/* Video Content Area */}
+            <div className="bg-white rounded-lg p-8 h-[565px] flex flex-col items-center justify-center">
+              <div className="text-center">
+                <button className="w-24 h-24 bg-samsung-color rounded-full flex items-center justify-center mb-6 mx-auto hover:bg-blue-500 transition-colors shadow-lg">
+                  <svg className="w-10 h-10 text-white ml-1" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M8 5v14l11-7z"/>
+                  </svg>
+                </button>
+                <h4 className="text-lg font-bold text-samsung-grey-900 mb-2">Self Essential Training Videos</h4>
+                <p className="text-sm text-samsung-color-3">Aenean aliquet lectus vestibulum gravida sed vulputate vitae.</p>
               </div>
             </div>
           </div>
