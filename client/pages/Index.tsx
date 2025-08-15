@@ -97,35 +97,7 @@ export default function Index() {
             </div>
           </div>
 
-          {/* Employee Info Grid - positioned to match Figma design */}
-        <div className="relative mb-6">
-          <div className="flex items-start gap-8 lg:gap-16">
-            {/* Designation */}
-            <div className="min-w-[100px]">
-              <div className="text-sm text-samsung-grey-600 mb-1">Designation</div>
-              <div className="font-bold text-sm text-samsung-text">Outsourcing</div>
-            </div>
-
-            {/* Vertical separator */}
-            <div className="hidden lg:block w-px h-14 bg-samsung-grey-light"></div>
-
-            {/* Division */}
-            <div className="flex-1 max-w-[450px]">
-              <div className="text-sm text-samsung-grey-600 mb-1">Division</div>
-              <div className="font-bold text-sm text-samsung-text">Tech Strategy Team\Smart Infra Group\Information System & AI Tools</div>
-            </div>
-
-            {/* Vertical separator */}
-            <div className="hidden lg:block w-px h-14 bg-samsung-grey-light"></div>
-
-            {/* Manager */}
-            <div className="min-w-[150px]">
-              <div className="text-sm text-samsung-grey-600 mb-1">Manager</div>
-              <div className="font-bold text-sm text-samsung-text">Ravindra S R (06786669)</div>
-            </div>
           </div>
-        </div>
-        </div>
 
         {/* Required Information Section */}
         <div className="mb-6">
