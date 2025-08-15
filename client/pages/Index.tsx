@@ -122,57 +122,117 @@ export default function Index() {
           </div>
         </div>
 
-        {/* Training Videos Section */}
-        <div className="bg-samsung-blue-bg rounded-lg p-6 mb-6">
-          <h3 className="text-base font-bold text-samsung-text-primary mb-6">Self Essential Training Videos</h3>
+        {/* Training Videos Section - Matching Figma Design Rectangles */}
+        <div className="relative">
+          {/* Main blue background rectangle */}
+          <div className="bg-samsung-blue-bg rounded-lg p-6 h-[753px]">
+            <h3 className="text-base font-bold text-samsung-text-primary mb-6">Self Essential Training Videos</h3>
 
-          {/* Tab Navigation Container */}
-          <div className="relative mb-8">
-            {/* Background bar */}
-            <div className="w-full h-10 bg-samsung-toggle-bg rounded-full"></div>
+            {/* Tab Navigation Container */}
+            <div className="relative mb-8">
+              {/* Background bar */}
+              <div className="w-full h-10 bg-samsung-toggle-bg rounded-full"></div>
 
-            {/* Active tab overlay */}
-            <div className="absolute top-0 left-0 h-10 bg-gradient-to-r from-[#3FBCE6] to-[#36A8DE] rounded-full transition-all duration-300"
-                 style={{ width: `${194 / 1010 * 100}%` }}>
-              <div className="flex items-center justify-center h-full">
-                <span className="text-white text-sm font-bold px-4">Understanding Compliance</span>
+              {/* Active tab overlay */}
+              <div className="absolute top-0 left-0 h-10 bg-gradient-to-r from-[#3FBCE6] to-[#36A8DE] rounded-full transition-all duration-300"
+                   style={{ width: `${194 / 1010 * 100}%` }}>
+                <div className="flex items-center justify-center h-full">
+                  <span className="text-white text-sm font-bold px-4">Understanding Compliance</span>
+                </div>
+              </div>
+
+              {/* Tab labels positioned over background */}
+              <div className="absolute top-0 left-0 w-full h-10 flex items-center">
+                <div className="flex gap-8 px-6 w-full">
+                  <button className="text-sm font-medium text-transparent min-w-[169px]">Understanding Compliance</button>
+                  <button onClick={() => setActiveTab("Understanding Compliance Generative AI & AI Ethics (R&D)")}
+                          className="text-sm font-medium text-samsung-text-primary hover:text-samsung-color whitespace-nowrap">
+                    Understanding Compliance Generative AI & AI Ethics (R&D)
+                  </button>
+                  <button onClick={() => setActiveTab("Privacy Training")}
+                          className="text-sm font-medium text-samsung-text-primary hover:text-samsung-color">
+                    Privacy Training
+                  </button>
+                  <button onClick={() => setActiveTab("SRI-B POSH Training")}
+                          className="text-sm font-medium text-samsung-text-primary hover:text-samsung-color">
+                    SRI-B POSH Training
+                  </button>
+                  <button onClick={() => setActiveTab("Contract Management")}
+                          className="text-sm font-medium text-samsung-text-primary hover:text-samsung-color">
+                    Contract Management
+                  </button>
+                </div>
               </div>
             </div>
 
-            {/* Tab labels positioned over background */}
-            <div className="absolute top-0 left-0 w-full h-10 flex items-center">
-              <div className="flex gap-8 px-6 w-full">
-                <button className="text-sm font-medium text-transparent min-w-[169px]">Understanding Compliance</button>
-                <button onClick={() => setActiveTab("Understanding Compliance Generative AI & AI Ethics (R&D)")}
-                        className="text-sm font-medium text-samsung-text-primary hover:text-samsung-color whitespace-nowrap">
-                  Understanding Compliance Generative AI & AI Ethics (R&D)
-                </button>
-                <button onClick={() => setActiveTab("Privacy Training")}
-                        className="text-sm font-medium text-samsung-text-primary hover:text-samsung-color">
-                  Privacy Training
-                </button>
-                <button onClick={() => setActiveTab("SRI-B POSH Training")}
-                        className="text-sm font-medium text-samsung-text-primary hover:text-samsung-color">
-                  SRI-B POSH Training
-                </button>
-                <button onClick={() => setActiveTab("Contract Management")}
-                        className="text-sm font-medium text-samsung-text-primary hover:text-samsung-color">
-                  Contract Management
-                </button>
+            {/* Video Reviews Container - Layered design from Figma */}
+            <div className="relative">
+              {/* First video review container (background layer) */}
+              <div className="bg-white rounded-lg p-6 h-[565px] flex flex-col items-center justify-center">
+                {/* White title section inside video area */}
+                <div className="w-full mb-6">
+                  <h4 className="text-base font-bold text-white mb-2">Self Essential Training Videos</h4>
+                  <p className="text-sm text-white">Aenean aliquet lectus vestibulum gravida sed vulputate vitae.</p>
+                </div>
+
+                {/* Video content */}
+                <div className="flex-1 flex flex-col items-center justify-center">
+                  <div className="w-20 h-20 bg-samsung-color rounded-full flex items-center justify-center mb-4">
+                    <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M8 5v14l11-7z"/>
+                    </svg>
+                  </div>
+                  <h4 className="text-lg font-bold text-samsung-grey-900 mb-2">Self Essential Training Videos</h4>
+                  <p className="text-sm text-samsung-color-3">Aenean aliquet lectus vestibulum gravida sed vulputate vitae.</p>
+                </div>
+              </div>
+
+              {/* Second overlapping video review container (foreground layer) */}
+              <div className="absolute top-1 left-1 bg-white rounded-lg p-6 w-[calc(100%-8px)] h-[565px] flex flex-col items-center justify-center shadow-sm">
+                <div className="text-center">
+                  <div className="w-20 h-20 bg-samsung-color rounded-full flex items-center justify-center mb-4 mx-auto">
+                    <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M8 5v14l11-7z"/>
+                    </svg>
+                  </div>
+                  <h4 className="text-lg font-bold text-samsung-grey-900 mb-2">Self Essential Training Videos</h4>
+                  <p className="text-sm text-samsung-color-3">Aenean aliquet lectus vestibulum gravida sed vulputate vitae.</p>
+                </div>
               </div>
             </div>
           </div>
 
-          {/* Video Content Area */}
-          <div className="bg-white rounded-lg p-8 min-h-[400px] flex flex-col items-center justify-center">
-            <div className="text-center">
-              <div className="w-20 h-20 bg-samsung-color rounded-full flex items-center justify-center mb-4 mx-auto">
-                <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M8 5v14l11-7z"/>
-                </svg>
+          {/* Bottom section with rounded bottom corners */}
+          <div className="bg-[#FBFCFC] rounded-b-lg p-6 h-[335px] -mt-[335px] relative z-10">
+            <div className="h-full flex flex-col justify-end">
+              {/* Compliance Checkbox */}
+              <div className="flex items-start gap-4 mb-6">
+                <button
+                  onClick={() => setIsChecked(!isChecked)}
+                  className="mt-1 flex-shrink-0"
+                >
+                  <div className={`w-5 h-5 rounded border-2 flex items-center justify-center transition-colors ${
+                    isChecked
+                      ? 'bg-samsung-color-3 border-samsung-color-3'
+                      : 'border-samsung-color-3 bg-white'
+                  }`}>
+                    {isChecked && (
+                      <svg className="w-3 h-3 text-white" fill="none" viewBox="0 0 12 10">
+                        <path
+                          d="M1 5L4.5 8.5L11 2"
+                          stroke="currentColor"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                      </svg>
+                    )}
+                  </div>
+                </button>
+                <p className="text-sm text-samsung-grey-900 leading-relaxed">
+                  I have attended the online annual compliance training videos and hereby ensure compliance of the same
+                </p>
               </div>
-              <h4 className="text-lg font-bold text-samsung-grey-900 mb-2">Self Essential Training Videos</h4>
-              <p className="text-sm text-samsung-color-3">Aenean aliquet lectus vestibulum gravida sed vulputate vitae.</p>
             </div>
           </div>
         </div>
