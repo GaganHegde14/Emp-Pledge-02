@@ -165,14 +165,9 @@ export default function Index() {
               </div>
             </div>
 
-            {/* Video Content Area */}
+            {/* Video Content Area - Simple rectangular box */}
             <div className="bg-white rounded-lg p-8 h-[565px] flex flex-col items-center justify-center">
               <div className="text-center">
-                <button className="w-24 h-24 bg-samsung-color rounded-full flex items-center justify-center mb-6 mx-auto hover:bg-blue-500 transition-colors shadow-lg">
-                  <svg className="w-10 h-10 text-white ml-1" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M8 5v14l11-7z"/>
-                  </svg>
-                </button>
                 <h4 className="text-lg font-bold text-samsung-grey-900 mb-2">Self Essential Training Videos</h4>
                 <p className="text-sm text-samsung-color-3">Aenean aliquet lectus vestibulum gravida sed vulputate vitae.</p>
               </div>
